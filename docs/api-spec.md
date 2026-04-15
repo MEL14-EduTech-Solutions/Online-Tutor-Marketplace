@@ -24,14 +24,3 @@
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
 | **GET** | `/api/admin/audit-logs` | Retrieve system-wide activity logs (Admin only). |
-
----
-
-# Data Validation Rules
-
-To ensure system integrity and security, the following validations will be enforced:
-
-1.  **Email Validation:** All emails must follow standard format and be checked for uniqueness in the database.
-2.  **KYC Document Lock:** Tutors cannot be displayed in search results (`GET /api/tutors`) if their `kyc_status` is not "Approved".
-3.  **Booking Conflict Check:** The backend must verify that a tutor does not have an overlapping session in the `bookings` table before allowing a `POST /api/bookings` request to succeed.
-4.  **Password Strength:** Minimum 8 characters, including 1 uppercase, 1 number, and 1 special character.
