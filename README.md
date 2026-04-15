@@ -1,4 +1,4 @@
-# International Student Housing Finder
+# Online Tutor Marketplace
 
 A sample project repository for planning and documenting a solution that helps students connect with verified academic tutors in Melbourne.
 
